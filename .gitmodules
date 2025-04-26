@@ -1,0 +1,3 @@
+[submodule "emmet-rs-node-wrapper"]
+	path = emmet-rs-node-wrapper
+	url = git@github.com:LeoDurillon/emmet-rs-node-wrapper.git
