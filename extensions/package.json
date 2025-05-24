@@ -1,8 +1,9 @@
 {
   "name": "emmet-rs",
   "displayName": "emmet-rs",
+  "author": "LeoDurillon",
   "description": "Emmet replacer written in rust",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -14,50 +15,6 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "languages": [
-      {
-        "id": "javascript",
-        "aliases": [
-          "JavaScript",
-          "javascript"
-        ],
-        "extensions": [
-          ".js",
-          ".mjs"
-        ]
-      },
-      {
-        "id": "typescript",
-        "aliases": [
-          "TypeScript",
-          "typescript"
-        ],
-        "extensions": [
-          ".ts",
-          "mts"
-        ]
-      },
-      {
-        "id": "javascriptreact",
-        "aliases": [
-          "JavaScriptReact",
-          "javascriptreact"
-        ],
-        "extensions": [
-          ".jsx"
-        ]
-      },
-      {
-        "id": "typescriptreact",
-        "aliases": [
-          "TypeScriptReact",
-          "typescriptreact"
-        ],
-        "extensions": [
-          ".tsx"
-        ]
-      }
-    ],
     "commands": [
       {
         "command": "emmetrs.expand",

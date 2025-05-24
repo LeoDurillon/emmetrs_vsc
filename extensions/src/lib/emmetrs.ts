@@ -18,7 +18,6 @@ export function createCompletion(
     );
 
     const expanded = expand(abbr);
-    console.log(expanded);
 
     if (!expanded) {
       return new vscode.CompletionList();
