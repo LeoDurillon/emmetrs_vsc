@@ -17,16 +17,11 @@ export function createCompletion(
       vscode.CompletionItemKind.Snippet
     );
 
-    let expanded;
-    try {
-      expanded = expand(abbr);
-    } catch (expandError) {
-      console.error("Error in expand function:", expandError);
-      return undefined;
-    }
+    const expanded = expand(abbr);
+    console.log(expanded);
 
     if (!expanded) {
-      return undefined;
+      return new vscode.CompletionList();
     }
 
     completion.documentation = expanded;
@@ -45,5 +40,6 @@ export function createCompletion(
     return new vscode.CompletionList([completion]);
   } catch (error) {
     console.error("Error in createCompletion function:", error);
+    return new vscode.CompletionList();
   }
 }
