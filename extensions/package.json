@@ -3,7 +3,7 @@
   "displayName": "emmet-rs",
   "author": "LeoDurillon",
   "description": "Emmet replacer written in rust",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -38,7 +38,7 @@
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
-    "create:vsix": "vsce package"
+    "create:vsix": "rm -r ./dist && vsce package"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
